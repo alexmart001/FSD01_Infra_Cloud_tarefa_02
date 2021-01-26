@@ -1,0 +1,8 @@
+---
+- hosts: all
+  tasks: 
+    - name: 'Instala pacotes de dependência do sistema operacional'
+      apt:
+        name: ['mysql-server']
+        state: latest
+      become: yes 
